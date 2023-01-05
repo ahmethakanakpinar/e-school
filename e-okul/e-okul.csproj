@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D3CB9BF-F43C-49EB-9CE9-20A90F5BE8E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_okul</RootNamespace>
+    <AssemblyName>e-okul</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eokulDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eokulDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_aldiğibelgeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_aldiğibelgeler.Designer.cs">
+      <DependentUpon>form_aldiğibelgeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_bolumlerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_bolumlerpaneli.Designer.cs">
+      <DependentUpon>form_bolumlerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_derslerpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_derslerpaneli.Designer.cs">
+      <DependentUpon>form_derslerpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_devamsizlikbilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_devamsizlikbilgisi.Designer.cs">
+      <DependentUpon>form_devamsizlikbilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_duyurular.Designer.cs">
+      <DependentUpon>form_duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_haftalikdersogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_haftalikdersogrenci.Designer.cs">
+      <DependentUpon>form_haftalikdersogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_haftalikdersprogrami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_haftalikdersprogrami.Designer.cs">
+      <DependentUpon>form_haftalikdersprogrami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_not.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_not.Designer.cs">
+      <DependentUpon>form_not.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_notlarpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_notlarpaneli.Designer.cs">
+      <DependentUpon>form_notlarpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ogrencipaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ogrencipaneli.Designer.cs">
+      <DependentUpon>form_ogrencipaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ogretmenpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ogretmenpanel.Designer.cs">
+      <DependentUpon>form_ogretmenpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ogretmenpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ogretmenpaneli.Designer.cs">
+      <DependentUpon>form_ogretmenpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_sifredegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_sifredegistir.Designer.cs">
+      <DependentUpon>form_sifredegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_yilsonunot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_yilsonunot.Designer.cs">
+      <DependentUpon>form_yilsonunot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_yoneticipaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_yoneticipaneli.Designer.cs">
+      <DependentUpon>form_yoneticipaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_yonetimpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_yonetimpanel.Designer.cs">
+      <DependentUpon>form_yonetimpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_aldiğibelgeler.resx">
+      <DependentUpon>form_aldiğibelgeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_bolumlerpaneli.resx">
+      <DependentUpon>form_bolumlerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_derslerpaneli.resx">
+      <DependentUpon>form_derslerpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_devamsizlikbilgisi.resx">
+      <DependentUpon>form_devamsizlikbilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_duyurular.resx">
+      <DependentUpon>form_duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_haftalikdersogrenci.resx">
+      <DependentUpon>form_haftalikdersogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_haftalikdersprogrami.resx">
+      <DependentUpon>form_haftalikdersprogrami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_not.resx">
+      <DependentUpon>form_not.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_notlarpaneli.resx">
+      <DependentUpon>form_notlarpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ogrencipaneli.resx">
+      <DependentUpon>form_ogrencipaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ogretmenpanel.resx">
+      <DependentUpon>form_ogretmenpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ogretmenpaneli.resx">
+      <DependentUpon>form_ogretmenpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_sifredegistir.resx">
+      <DependentUpon>form_sifredegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_yilsonunot.resx">
+      <DependentUpon>form_yilsonunot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_yoneticipaneli.resx">
+      <DependentUpon>form_yoneticipaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_yonetimpanel.resx">
+      <DependentUpon>form_yonetimpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="eokulDataSet.xsc">
+      <DependentUpon>eokulDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="eokulDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eokulDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eokulDataSet.xss">
+      <DependentUpon>eokulDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butonsol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butonsag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\261420-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155-1554494_operation-last-go-back-previous-comments-go-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-eokullogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93634.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yonetici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoneticialani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogretmenalani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velibilgilendirmealani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dersler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinifalani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duyurularalani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaydet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\ogrenciresimler\" />
+    <Folder Include="Resources\ogretmenresimler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yenile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dersprogrami.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paroladegistir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duzenleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notlar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
