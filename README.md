@@ -273,3 +273,156 @@
     </td>
   </tr>
   </table>
+  
+  <table>
+  <tr>
+    <td>
+       <img src= "https://user-images.githubusercontent.com/58145399/210782538-f727dfd3-b313-4aa6-8392-dbf75d96f207.png" alt = "örnek"/>
+    </td>
+     <td>
+        <img src= "https://user-images.githubusercontent.com/58145399/210782601-0b81dd52-8521-4ddc-86de-7c568a326902.png" alt = "örnek"/>
+    </td>
+     <td>
+        <img src= "https://user-images.githubusercontent.com/58145399/210782639-7f679ffc-3854-4b51-9252-28974cbfd38b.png" alt = "örnek"/>
+    </td>
+     <td>
+        <img src= "https://user-images.githubusercontent.com/58145399/210782667-6da26746-6d7f-4ba7-9c4e-281cd17c71e6.png" alt = "örnek"/>
+    </td>
+  </tr>
+  <tr>
+    <td colspan = 4>
+      <p>Müdür Şifresini yenileme kısmında Eski Şifresine İhtiyaç duyar ama Müdür Yardımcısında, Öğretmende veya Öğrencide Eski şifreye ihtiyaç olmadan müdür şifreyi değiştirebilir.
+</p>
+    </td>
+  </tr>
+  </table>
+  <h2>ÖĞRETMEN GİRİŞİ</h2>
+  <table>
+  <tr>
+    <td>
+       <img src= "https://user-images.githubusercontent.com/58145399/210783154-02b2eb95-6c83-45cc-92f3-97c955617b6c.png" alt = "örnek"/>
+    </td>
+        <td>
+          <p>Öğretmen T.C ve Şifresi ile giriş yaptığı zaman bu panele ulaşır.</p>
+          <p>Kendine Ait Duyurular paneli, Ders Programı, Notlar Paneli vardır.</p>
+    </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <td>
+       <img src= "https://user-images.githubusercontent.com/58145399/210783400-ef93b2e5-2efb-43bb-9291-454558263993.png" alt = "örnek"/>
+    </td>
+        <td>
+          <p>Öğretmen panelinde ki Duyurularda ise sadece öğretmenlere, öğrencileri ya da her ikisine de duyuru atabilme özelliği var.</p>
+          <p>Geri kalan kısmı aynıdır.</p>
+    </td>
+  </tr>
+  </table>
+  
+  <table>
+     <tr>
+    <td>
+     <img src= "https://user-images.githubusercontent.com/58145399/210783637-f20b96db-c850-4498-95e8-bb5aaa4766c9.png" alt = "örnek"/>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <p>Yönetim paneli Ders Programı kısmında öğretmene atılan dersleri burada otomatik olarak gösterir.</p>
+    <ol>
+      <li>Dersi hangi sınıfa ve hangi bölüme olduğunu gösterir.</li>
+    </ol>
+    </td>
+  </tr>
+</table>
+
+  <table>
+     <tr>
+    <td>
+     <img src= "https://user-images.githubusercontent.com/58145399/210783844-b147064d-8ae3-4962-b36e-174a4ec009d4.png" alt = "örnek"/>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <p>Öğretmen Kendiği Girdiği Derslerin Öğrencilerine Not girmesi için bu panel önemlidir.</p>
+    <ol>
+      <li>Sadece Öğretmenin girdiği bölümleri gösterir.</li>
+      <li>Girdiği Bölümdeki Girdiği Dersleri gösterir.</li>
+      <li>Girdiği Dersin Kaçıncı Sınıf olduğunu gösterir.</li>   
+    </ol>
+    </td>
+  </tr>
+</table>
+
+ <table>
+  <tr>
+    <td>
+       <img src= "https://user-images.githubusercontent.com/58145399/210784356-8bc61d3f-c27d-46a1-8c50-820b4f6c03e9.png" alt = "örnek"/>
+    </td>
+        <td>
+          <p>Öğretmenin Şifre değiştirme kısmı Eski Şifresini biliyorsa kendi değiştirebilir eğer Bilmiyorsa Müdür veya Müdür yardımcısına danışması gerekir.</p>
+    </td>
+  </tr>
+  </table>
+  
+  <h2>ÖĞRENCİ GİRİŞİ</h2>
+  
+   <table>
+  <tr>
+    <td rowspan = 5>
+       <img src= "https://user-images.githubusercontent.com/58145399/210785649-f32f806b-21c4-4160-8d71-7ec9b098f9aa.png" alt = "örnek"/>
+    </td>
+        <td>
+          <p>Öğrenci Girişi Panelinde T.C ve İlk Şifre, Doğum tarihinizi girerek Panele Başarıyla giriş yapmış olacaksınız.</p>
+          <p>Sırasıyla T.C kimliğiniz, Adınız Soyadınız, Bölümünüz, Sınıfınız,</p>
+          <p>DUYURULAR, DEVAMSIZLIK BİLGİSİ, NOT BİLGİSİ, HAFTALIK DERS PROGRAMINIZ, ŞİFRE DEĞİŞTİR ve son olarak Sınıf öğretmeninizdir</p>
+    </td>
+  </tr>
+   <tr>
+      <td>
+           <img src= "https://user-images.githubusercontent.com/58145399/210786312-8d92ae0a-1cb7-4068-b48e-148602b9d0f5.png" alt = "örnek"/>
+    </td>
+     </tr>
+   <tr>
+      <td>
+          <p>Öğrenci sadece kendisine gelen duyuruları ve Gönderinin Kimden geldiğini görebilir</p>
+    </td>
+     </tr>
+    <tr>
+      <td>
+           <img src= "https://user-images.githubusercontent.com/58145399/210786554-09de9f0d-9661-4875-b7c5-3e7cc570ebbd.png" alt = "örnek"/>
+    </td>
+     </tr>
+   <tr>
+      <td>
+          <p>Hangi günde devamsızlık yapıldıysa O günde “G” işareti belirir</p>
+    </td>
+     </tr>
+  
+  </table>
+  
+  <table>
+     <tr>
+    <td>
+     <img src= "https://user-images.githubusercontent.com/58145399/210787065-3a03230a-2c26-4322-bbde-1a96afdd4deb.png" alt = "örnek"/>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <p>Öğrencinin notlar paneli öğrenci bu kısımda kendi derslerinin vize, final notlarını görür ve sınavların Sınıf Ortalamasını görür.</p>
+    </td>
+  </tr>
+</table>
+
+<table>
+     <tr>
+    <td>
+     <img src= "https://user-images.githubusercontent.com/58145399/210787209-1c02e170-4f57-46f5-8f46-92840a924173.png" alt = "örnek"/>
+    </td>
+  </tr>
+   <tr>
+    <td>
+    <p>Öğrenci Kendine Ait Ders Programını görür. Bu ders programının verilerini Yönetim paneli Öğrenci ders programından çeker.</p>
+    </td>
+  </tr>
+</table>
