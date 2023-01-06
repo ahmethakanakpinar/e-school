@@ -130,6 +130,7 @@
             this.pictureBoxblm_yenile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxblm_yenile.TabIndex = 5;
             this.pictureBoxblm_yenile.TabStop = false;
+            this.pictureBoxblm_yenile.Click += new System.EventHandler(this.pictureBoxblm_yenile_Click);
             // 
             // dtblm_bolumders
             // 

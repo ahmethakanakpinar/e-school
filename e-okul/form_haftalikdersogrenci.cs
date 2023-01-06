@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
 namespace e_okul
 {
     public partial class form_haftalikdersogrenci : Form
@@ -16,7 +17,8 @@ namespace e_okul
         {
             InitializeComponent();
         }
-        static string constring = "Data Source=AHMETHAKAN\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
+        static string bilgisayarAdi = Dns.GetHostName();
+        static string constring = "Data Source=" + bilgisayarAdi + "\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(constring);
 
         public void dersprogramigetir(string a,Panel b)

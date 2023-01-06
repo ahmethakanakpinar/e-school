@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
+
 
 namespace e_okul
 {
@@ -126,34 +128,7 @@ namespace e_okul
 
 
             }
-            //panel1.Controls.Clear();
-            //int kacyil;
-            //kacyil = Convert.ToInt32(comboBoxblm_kacyil.Text);
-
-            //for (int i = 0; i<kacyil;i++)
-            //{
-            //    Label label = new Label();
-
-            //    label.Size = new Size(70, 25);
-
-            //    label.Location = new Point(10, 10 + (25 * i));
-            //    label.Text = ((i+1)+".Sınıf Öğr. :" );
-            //    label.TabIndex = 1;
-            //    label.Name = ("label_sinifogretmeni" + i);
-            //    panel1.Controls.Add(label);
-
-            //    ComboBox comboBox = new ComboBox();
-
-            //    comboBox.Size = new Size(120, 25);
-
-            //    comboBox.Location = new Point(80, 10 + (25*i));
-
-            //    comboBox.TabIndex = 2;
-            //    comboBox.Name = ("comboBox_sinifogretmeni" + i);
-            //    panel1.Controls.Add(comboBox);
-
-
-            //}
+        
 
         }
 
@@ -180,7 +155,9 @@ namespace e_okul
            
 
         }
-        static string constring = "Data Source=AHMETHAKAN\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
+
+        static string bilgisayarAdi = Dns.GetHostName();
+        static string constring = "Data Source=" + bilgisayarAdi + "\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(constring);
         public void KisiListele()
         {
@@ -354,6 +331,11 @@ namespace e_okul
                 verisil(adi);
                 KisiListele();
             }
+        }
+
+        private void pictureBoxblm_yenile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

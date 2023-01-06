@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
 
 namespace e_okul
 {
@@ -17,7 +18,8 @@ namespace e_okul
         {
             InitializeComponent();
         }
-        static string constring = "Data Source=AHMETHAKAN\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
+        static string bilgisayarAdi = Dns.GetHostName();
+        static string constring = "Data Source=" + bilgisayarAdi + "\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(constring);
         public static string girisadsoyad;
         public static string girissifre;
@@ -97,14 +99,14 @@ namespace e_okul
             }
             if (Form1.tiklanma == 2)
             {
-                //if (resimkarakter == tb_resim.Text)
-                //{
+                if (resimkarakter == tb_resim.Text)
+                {
                     baglanti.Open();
                     SqlCommand commandmdr = new SqlCommand("Select * From ogrenci", baglanti);
                     SqlDataReader drmdr = commandmdr.ExecuteReader();
                     while (drmdr.Read())
                     {
-                        if (drmdr[2].ToString() == kullaniciadi /*&& drmdr[3].ToString() == sifre*/)
+                        if (drmdr[2].ToString() == kullaniciadi && drmdr[3].ToString() == sifre)
                         {
                             girisadsoyad = drmdr[0].ToString() + " " + drmdr[1].ToString();
                             girissifre = drmdr[3].ToString();
@@ -128,14 +130,14 @@ namespace e_okul
                         MessageBox.Show("Kullanıcı Adı Veya Şifre Hatalı");
                     }
                     baglanti.Close();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Resimdeki Rakamlar Hatalı Girilmiştir");
-                //}
+                }
+                else
+                {
+                    MessageBox.Show("Resimdeki Rakamlar Hatalı Girilmiştir");
+                }
 
 
-              
+
             }
         }
 

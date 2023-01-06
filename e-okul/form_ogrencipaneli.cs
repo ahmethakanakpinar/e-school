@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
 
 namespace e_okul
 {
@@ -99,7 +100,8 @@ namespace e_okul
             this.Close();
             Application.Exit();
         }
-        static string constring = "Data Source=AHMETHAKAN\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
+        static string bilgisayarAdi = Dns.GetHostName();
+        static string constring = "Data Source=" + bilgisayarAdi + "\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(constring);
 
         public void KisiListele(string a, DataGridView b)

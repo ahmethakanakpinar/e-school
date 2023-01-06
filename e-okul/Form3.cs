@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
 
 namespace e_okul
 {
@@ -17,7 +18,8 @@ namespace e_okul
         {
             InitializeComponent();
         }
-        static string constring = "Data Source=AHMETHAKAN\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
+        static string bilgisayarAdi = Dns.GetHostName();
+        static string constring = "Data Source=" + bilgisayarAdi + "\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(constring);
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -86,17 +88,9 @@ namespace e_okul
 
         }
 
-        private void button_aldiğibelgeler_Click(object sender, EventArgs e)
-        {
-            form_aldiğibelgeler form_Aldiğibelgeler = new form_aldiğibelgeler();
-            formgetir(form_Aldiğibelgeler);
-        }
+      
 
-        private void button_yilsonunot_Click(object sender, EventArgs e)
-        {
-            form_yilsonunot form_Yilsonunot = new form_yilsonunot();
-            formgetir(form_Yilsonunot);
-        }
+     
 
         private void label1_Click(object sender, EventArgs e)
         {

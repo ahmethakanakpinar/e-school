@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
 
 namespace e_okul
 {
@@ -31,6 +32,7 @@ namespace e_okul
                 form_yonetimpanel form_Yonetimpanel = new form_yonetimpanel();
                 form_Yonetimpanel.Show();
                 this.Hide();
+                //sa
             }
             else if(form_yonetimpanel.giris == 50)
             {
@@ -41,7 +43,8 @@ namespace e_okul
             }
            
         }
-        static string constring = "Data Source=AHMETHAKAN\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
+        static string bilgisayarAdi = Dns.GetHostName();
+        static string constring = "Data Source=" + bilgisayarAdi + "\\SQLEXPRESS;Initial Catalog=eokul;Integrated Security=True";
         SqlConnection baglanti = new SqlConnection(constring);
         public void KisiListele(string a)
         {

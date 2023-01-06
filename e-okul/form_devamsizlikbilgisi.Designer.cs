@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelgun = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -62,8 +64,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +109,24 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(1060, 614);
             this.panel.TabIndex = 0;
+            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(793, 574);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(647, 577);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Toplam Devamsızlığı :";
             // 
             // panelgun
             // 
@@ -340,23 +358,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(31, 447);
             this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(647, 577);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Toplam Devamsızlığı :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(793, 574);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 3;
             // 
             // form_devamsizlikbilgisi
             // 

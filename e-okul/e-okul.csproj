@@ -72,12 +72,6 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="form_aldiğibelgeler.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="form_aldiğibelgeler.Designer.cs">
-      <DependentUpon>form_aldiğibelgeler.cs</DependentUpon>
-    </Compile>
     <Compile Include="form_bolumlerpaneli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,12 +144,6 @@
     <Compile Include="form_sifredegistir.Designer.cs">
       <DependentUpon>form_sifredegistir.cs</DependentUpon>
     </Compile>
-    <Compile Include="form_yilsonunot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="form_yilsonunot.Designer.cs">
-      <DependentUpon>form_yilsonunot.cs</DependentUpon>
-    </Compile>
     <Compile Include="form_yoneticipaneli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="form_aldiğibelgeler.resx">
-      <DependentUpon>form_aldiğibelgeler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_bolumlerpaneli.resx">
       <DependentUpon>form_bolumlerpaneli.cs</DependentUpon>
@@ -217,9 +202,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form_sifredegistir.resx">
       <DependentUpon>form_sifredegistir.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="form_yilsonunot.resx">
-      <DependentUpon>form_yilsonunot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_yoneticipaneli.resx">
       <DependentUpon>form_yoneticipaneli.cs</DependentUpon>
